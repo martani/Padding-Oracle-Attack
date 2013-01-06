@@ -9,7 +9,7 @@ using System.Net;
 
 namespace PaddingOracle.Oracles
 {
-	public class OnlineCBCOracle : ICBCOracl 
+	public class OnlineCBCOracle : ICBCOracle
 	{
 		//This Oracle is the test Oracle from the Crypto class on Coursera https://www.coursera.org/course/crypto
 		//Use at your own responsibility!
@@ -23,7 +23,7 @@ namespace PaddingOracle.Oracles
             try
             {
                 wc.DownloadData(BASE_URL + urlData);
-            }
+      		}
             catch (WebException e)
             {
                 //Invalid padding
