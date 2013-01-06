@@ -6,6 +6,7 @@
 using System;
 using System.Security.Cryptography;
 using System.IO;
+using PaddingOracleAttackLib;
 
 namespace PaddingOracle.Oracles
 {

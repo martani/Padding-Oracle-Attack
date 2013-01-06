@@ -6,16 +6,16 @@
 using System;
 using System.Collections.Generic;
 
-namespace PaddingOracle
+namespace PaddingOracleAttackLib
 {
 	public class PaddingOracleAttacker
 	{
 		const int BLOCK_SIZE = 16;
 		
 		//The internal Oracle used to query for the correctness of the padding
-		private Oracles.ICBCOracle _CBCOracle;
+		private ICBCOracle _CBCOracle;
 		
-		public PaddingOracleAttacker (Oracles.ICBCOracle oracle)
+		public PaddingOracleAttacker (ICBCOracle oracle)
 		{
 			_CBCOracle = oracle;
 		}

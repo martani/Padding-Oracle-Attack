@@ -6,6 +6,7 @@
 
 using System;
 using System.Net;
+using PaddingOracleAttackLib;
 
 namespace PaddingOracle.Oracles
 {

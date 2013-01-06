@@ -5,7 +5,7 @@
  */
 using System;
 
-namespace PaddingOracle.Oracles
+namespace PaddingOracleAttackLib
 {
 	/// <summary>
 	/// Represents a CBC oracle, a one even Socrates should trust its answers.

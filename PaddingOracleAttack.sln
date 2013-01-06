@@ -1,20 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddingOracleAttack", "PaddingOracleAttack.csproj", "{FFDE0513-5CC0-4902-9A1C-91DF73BA612F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddingOracleAttackLib", "PaddingOracleAttackLib\PaddingOracleAttackLib.csproj", "{FF220785-633B-4407-8D48-317150E2C4E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaddingOracleAttackTest", "PaddingOracleAttackTest\PaddingOracleAttackTest.csproj", "{D05C32D8-2BF1-47EA-99DD-2C561DEB3EF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|x86 = Debug|x86
-		Release|x86 = Release|x86
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FFDE0513-5CC0-4902-9A1C-91DF73BA612F}.Debug|x86.ActiveCfg = Debug|x86
-		{FFDE0513-5CC0-4902-9A1C-91DF73BA612F}.Debug|x86.Build.0 = Debug|x86
-		{FFDE0513-5CC0-4902-9A1C-91DF73BA612F}.Release|x86.ActiveCfg = Release|x86
-		{FFDE0513-5CC0-4902-9A1C-91DF73BA612F}.Release|x86.Build.0 = Release|x86
+		{D05C32D8-2BF1-47EA-99DD-2C561DEB3EF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D05C32D8-2BF1-47EA-99DD-2C561DEB3EF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D05C32D8-2BF1-47EA-99DD-2C561DEB3EF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D05C32D8-2BF1-47EA-99DD-2C561DEB3EF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF220785-633B-4407-8D48-317150E2C4E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF220785-633B-4407-8D48-317150E2C4E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF220785-633B-4407-8D48-317150E2C4E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF220785-633B-4407-8D48-317150E2C4E3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = PaddingOracleAttack.csproj
+		StartupItem = PaddingOracleAttackTest\PaddingOracleAttackTest.csproj
 	EndGlobalSection
 EndGlobal

@@ -5,7 +5,7 @@
  */
 using System;
 
-namespace PaddingOracle
+namespace PaddingOracleAttackLib
 {
 	public static class Helpers
 	{
