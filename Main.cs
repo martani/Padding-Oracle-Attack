@@ -3,7 +3,6 @@
  * copyright 2013
  * 
  */
-
 using System;
 
 namespace PaddingOracle
@@ -25,16 +24,16 @@ namespace PaddingOracle
 			
 			//To use a local Oracle uncomment this
 			
-			Oracles.AES_CBCOracle aes = new Oracles.AES_CBCOracle();
-			PaddingOracleAttacker attacker = new PaddingOracleAttacker(aes);
+			Oracles.AES_CBCOracle aes = new Oracles.AES_CBCOracle ();
+			PaddingOracleAttacker attacker = new PaddingOracleAttacker (aes);
 			string clearText = "And what, Socrates, is the food of the soul? Surely, I said, knowledge is the food of the soul. -- Plato";
-			byte[] cipher = aes.AES_EncryptString(clearText);
+			byte[] cipher = aes.AES_EncryptString (clearText);
 			
 			
-			string plainText = attacker.Decrypt(cipher);			
-			Console.WriteLine("\n>>>>>>>>> Decryption result <<<<<<<<<<<:\n{0}", plainText);
+			string plainText = attacker.Decrypt (cipher);			
+			Console.WriteLine ("\n>>>>>>>>> Decryption result <<<<<<<<<<<:\n{0}", plainText);
 			
-			Console.ReadKey();
+			Console.ReadKey ();
 		}
 	}
 }

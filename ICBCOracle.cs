@@ -3,7 +3,6 @@
  * copyright 2013
  * 
  */
-
 using System;
 
 namespace PaddingOracle.Oracles
@@ -23,7 +22,7 @@ namespace PaddingOracle.Oracles
 		/// A 32 bytes block (2 AES blocks) in which the first block is IV,
 		/// the second is the encrypted data itself.
 		/// </param>
-		bool RequestOracle(byte[] cipher);
+		bool RequestOracle (byte[] cipher);
 	}
 }
 
