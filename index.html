@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Padding-oracle-attack by martani</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/martani/Padding-Oracle-Attack">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/martani/Padding-Oracle-Attack/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/martani/Padding-Oracle-Attack/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Padding-oracle-attack</h1>
+          <p>A demonstration of a padding Oracle attack in C#</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/martani">martani</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>C# Padding Oracle Attack</h1>
+
+<p>A demonstration of a padding Oracle attack in <code>C#</code>.</p>
+
+<h2>Info &amp; build</h2>
+
+<p>The solution containing the projects <code>PaddingOracleAttackTest</code> and <code>PaddingOracleAttackLib</code> is developed under mono, it should be easily used from Visual Studio also.</p>
+
+<h2>Usage</h2>
+
+<p>You can use the class <code>PaddingOracleAttacker</code> from the library project <code>PaddingOracleAttackLib</code> in order to perform padding oracle attacks.</p>
+
+<p>This class accepts an Oracle object in the constructor. The Oracle should implement the interface <code>PaddingOracleAttackLib.ICBCOracle</code>.
+The function <code>bool RequestOracle (byte[] cipher)</code> takes a byte array as cipher (usually 32 bytes IV+data) and returns <code>true</code> on a valid padding, <code>false</code> otherwise.</p>
+
+<p>Take a look at <code>PaddingOracleAttackTest/Oracles</code> for two examples of such Oracles:</p>
+
+<ul>
+<li>
+<code>AES_CBCOracle</code>: implements a simple padding Oracle using AES as the cipher.</li>
+<li>
+<code>OnlineCBCOracle</code>: this is an online padding Oracle.</li>
+</ul><p><strong>Check <code>Main.cs</code> for how to use both of these.</strong></p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
