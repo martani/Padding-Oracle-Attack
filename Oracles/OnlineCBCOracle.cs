@@ -9,7 +9,7 @@ using System.Net;
 
 namespace PaddingOracle.Oracles
 {
-	public class OnlineCBCOracle : ICBCOracle
+	public class OnlineCBCOracle : ICBCOracl 
 	{
 		//This Oracle is the test Oracle from the Crypto class on Coursera https://www.coursera.org/course/crypto
 		//Use at your own responsibility!
